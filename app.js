@@ -163,7 +163,7 @@ function clearTasksFromLocalStorage() {
 }
 
 // Filter Tasks          // it will search for the task with every letter entered in the filter input field
-function filterTasks() {
+function filterTasks(e) {
     const text = e.target.value.toLowerCase();     // it will take the value from the input field of the filter text and convert it into lower case and store it in const text
 
     document.querySelectorAll('.collection-item').forEach(function(task) {
