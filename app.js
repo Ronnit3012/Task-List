@@ -64,8 +64,7 @@ function getTasks() {               // this will create a new list of thehistory
 function addTask() {
     if(taskInput.value === '') {       // for when input field is empty and add task has been clicked
         alert('Add a Task');
-    } 
-    
+    } else {                    // so that it doesn't add a blank task
     // Create li element
     const li = document.createElement('li');
     // Add class
@@ -94,6 +93,7 @@ function addTask() {
     taskInput.value = '';       // this will clear the Input firld after every task has been added to the list
 
     // console.log(li);
+    }
 }
 
 // Store Task
